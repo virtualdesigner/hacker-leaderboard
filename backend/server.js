@@ -9,7 +9,7 @@ app.use(bodyParser.json());
 app.use(cors());
 
 // API
-const users = require('./api/teams.js');
+const users = require('/api/teams.js');
 app.use('/api/teams', users);
 
 app.use(express.static(path.join(__dirname, '../build')))
