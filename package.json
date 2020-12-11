@@ -20,7 +20,7 @@
   "scripts": {
     "client": "npm start",
     "client-install": "npm install",
-    "start": "node server.js --prefix backend",
+    "start": "cd backend && node server.js ",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install && npm run build",
     "build": "react-scripts build",
     "test": "react-scripts test",
