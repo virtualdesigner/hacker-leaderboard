@@ -9,8 +9,8 @@ app.use(bodyParser.json());
 app.use(cors());
 
 // API
-const users = require('/api/teams.js');
-app.use('/api/teams', users);
+const teams = require('./api/teams.js');
+app.use('/api/teams', teams);
 
 app.use(express.static(path.join(__dirname, '../build')))
 app.get('*', (req, res) => {
